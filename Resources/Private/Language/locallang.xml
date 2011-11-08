@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<T3locallang>
+	<meta type="array">
+		<type>module</type>
+		<description>Language labels for the Amazon extension in the FRONTEND</description>
+	</meta>
+	<data type="array">
+		<languageKey index="default" type="array">
+            <label index="tx_amazonbooks.choose_books">Choose Books</label>
+			<label index="tx_amazonbooks.add_book">Add Book</label>
+			<label index="tx_amazonbooks.choose_book">Chooses the book</label>
+			<label index="tx_amazonbooks.show_books">Show Books {0} - {1} of {2}</label>
+			<label index="tx_amazonbooks.no_searchresults">There are no searchresults</label>
+			<label index="tx_amazonbooks.picture">Cover</label>
+			<label index="tx_amazonbooks.title">Title</label>
+			<label index="tx_amazonbooks.author">Author</label>
+			<label index="tx_amazonbooks.manufacturer">Publishing House</label>
+			<label index="tx_amazonbooks.asin">ASIN</label>
+			<label index="tx_amazonbooks.detailpage">Detailspage</label>
+			<label index="tx_amazonbooks.download_error">The Image couldn't be downloaded. Please download it seperately</label>
+			<label index="tx_amazonbooks.no_connection">A connection to Amazon couldn't be established. Please check your credentials!</label>		
+			<label index="tx_amazonbooks.search_for_button">Search</label>
+			<label index="tx_amazonbooks.no_sword">Please use a Searchword!</label>
+			<label index="tx_amazonbooks.search_for">Search for:</label>
+			<label index="tx_amazonbooks.no_image_path_perms">You don't have access to this path: </label>
+			<label index="tx_amazonbooks.path_not_createable">The configured path is not writeable.</label>
+			<label index="tx_amazonbooks_domain_model_link">Link</label>
+			<label index="tx_amazonbooks_domain_model_link.link">Show Link</label>
+			<label index="tx_amazonbooks_domain_model_link.asin">ASIN</label>
+			<label index="tx_amazonbooks_domain_model_link.creator">The creator of the book</label>
+			<label index="tx_amazonbooks_domain_model_link.author">The author of the book</label>
+			<label index="tx_amazonbooks_domain_model_link.title">The title of the book</label>
+			<label index="tx_amazonbooks_domain_model_link.manufacturer">The manufacturer of the book</label>
+			<label index="tx_amazonbooks_domain_model_link.isbn">ISBN code</label>
+			<label index="tx_amazonbooks_domain_model_link.edition">Edition of the book</label>
+			<label index="tx_amazonbooks_domain_model_link.small_image">Small Image for Listings</label>
+			<label index="tx_amazonbooks_domain_model_link.medium_image">Medium Image for Single View</label>
+			<label index="tx_amazonbooks_domain_model_link.large_image">Large image for Zoom</label>
+			
+		</languageKey>
+		<languageKey index="de" type="array">
+            <label index="tx_amazonbooks.choose_books">Bücher wählen</label>
+			<label index="tx_amazonbooks.add_book">Buch hinzufügen</label>
+			<label index="tx_amazonbooks.choose_book">Wählt das Buch aus</label>
+			<label index="tx_amazonbooks.show_books">Zeige Bücher {0} - {1} von {2}</label>
+			<label index="tx_amazonbooks.no_searchresults">Keine Suchergebnisse</label>
+			<label index="tx_amazonbooks.picture">Buchcover</label>
+			<label index="tx_amazonbooks.title">Titel</label>
+			<label index="tx_amazonbooks.author">Autor</label>
+			<label index="tx_amazonbooks.manufacturer">Verlag</label>
+			<label index="tx_amazonbooks.asin">ASIN</label>
+			<label index="tx_amazonbooks.detailpage">Detailseite</label>
+			<label index="tx_amazonbooks.download_error">Es ist ein Fehler beim Herunterladen des Bildes aufgetreten. Bitte fügen Sie es manuell ein.</label>
+			<label index="tx_amazonbooks.no_connection">Es konnte keine Verbindung zu Amazon hergestellt werden. Bitte überprüfen Sie die Zugangsdaten im Extension-Manager.</label>
+			<label index="tx_amazonbooks.search_for">Suche nach:</label>
+			<label index="tx_amazonbooks.search_for_button">Suchen</label>
+			<label index="tx_amazonbooks.no_sword">Bitte geben Sie ein Suchwort an!</label>
+			<label index="tx_amazonbooks.no_image_path_perms">Sie haben auf diesen Pfad keinen Zugriff: </label>
+			<label index="tx_amazonbooks.path_not_createable">Der konfigurierte Pfad ist nicht beschreibbar.</label>
+			<label index="tx_amazonbooks_domain_model_link">Link</label>
+			<label index="tx_amazonbooks_domain_model_link.link">Link anzeigen</label>
+			<label index="tx_amazonbooks_domain_model_link.asin">ASIN</label>
+			<label index="tx_amazonbooks_domain_model_link.creator">Verfasser</label>
+			<label index="tx_amazonbooks_domain_model_link.author">Autor</label>
+			<label index="tx_amazonbooks_domain_model_link.title">Titel</label>
+			<label index="tx_amazonbooks_domain_model_link.manufacturer">Verlag</label>
+			<label index="tx_amazonbooks_domain_model_link.isbn">ISBN</label>
+			<label index="tx_amazonbooks_domain_model_link.edition">Ausgabe</label>
+			<label index="tx_amazonbooks_domain_model_link.small_image">Kleines Bild</label>
+			<label index="tx_amazonbooks_domain_model_link.medium_image">Mittleres Bild</label>
+			<label index="tx_amazonbooks_domain_model_link.large_image">Großes Bild</label>
+		</languageKey>		
+	</data>
+</T3locallang>

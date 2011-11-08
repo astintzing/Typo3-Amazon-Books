@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<T3locallang>
+	<meta type="array">
+		<type>database</type>
+		<description>Language labels for database tables/fields belonging to extension 'amazon_books'</description>
+	</meta>
+	<data type="array">
+		<languageKey index="default" type="array">
+			<label index="tx_amazonbooks_domain_model_link">Book</label>
+			<label index="tx_amazonbooks_domain_model_link.link">Link</label>
+			<label index="tx_amazonbooks_domain_model_link.description">Custom Description</label>
+			<label index="tx_amazonbooks_domain_model_link.asin">Asin</label>
+			<label index="tx_amazonbooks_domain_model_link.creator">Creator</label>
+			<label index="tx_amazonbooks_domain_model_link.author">Author</label>
+			<label index="tx_amazonbooks_domain_model_link.title">Title</label>
+			<label index="tx_amazonbooks_domain_model_link.manufacturer">Manufacturer</label>
+			<label index="tx_amazonbooks_domain_model_link.isbn">Isbn</label>
+			<label index="tx_amazonbooks_domain_model_link.edition">Edition</label>
+			<label index="tx_amazonbooks_domain_model_link.small_image">Small Image</label>
+			<label index="tx_amazonbooks_domain_model_link.medium_image">Medium Image</label>
+			<label index="tx_amazonbooks_domain_model_link.large_image">Large Image</label>
+			<label index="tx_amazonbooks_domain_model_link.dam_image">Own Image</label>
+			<label index="tx_amazonbooks_domain_model_link.calls">Calls</label>
+			<label index="tx_amazonbooks_domain_model_link.link_list">List of Amazon Books</label>
+		</languageKey>
+		<languageKey index="de" type="array">
+			<label index="tx_amazonbooks_domain_model_link">Buch</label>
+			<label index="tx_amazonbooks_domain_model_link.description">Eigene Beschreibung</label>
+			<label index="tx_amazonbooks_domain_model_link.link">Amazon Buch</label>
+			<label index="tx_amazonbooks_domain_model_link.asin">Asin</label>
+			<label index="tx_amazonbooks_domain_model_link.creator">Ersteller</label>
+			<label index="tx_amazonbooks_domain_model_link.author">Autor</label>
+			<label index="tx_amazonbooks_domain_model_link.title">Titel</label>
+			<label index="tx_amazonbooks_domain_model_link.manufacturer">Verlag</label>
+			<label index="tx_amazonbooks_domain_model_link.isbn">ISBN</label>
+			<label index="tx_amazonbooks_domain_model_link.edition">Auflage</label>
+			<label index="tx_amazonbooks_domain_model_link.small_image">Kleines Bild</label>
+			<label index="tx_amazonbooks_domain_model_link.medium_image">Mittleres Bild</label>
+			<label index="tx_amazonbooks_domain_model_link.large_image">Großes Bild</label>
+			<label index="tx_amazonbooks_domain_model_link.dam_image">Eigenes Bild</label>
+			<label index="tx_amazonbooks_domain_model_link.calls">Aufrufe</label>
+			<label index="tx_amazonbooks_domain_model_link.link_list">Auflistung Amazon Bücher</label>
+		</languageKey>
+	</data>
+</T3locallang>

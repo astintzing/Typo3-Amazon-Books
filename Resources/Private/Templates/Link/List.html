@@ -1,0 +1,34 @@
+<f:layout name="Default" />
+{namespace axt=Tx_AmazonBooks_ViewHelpers}
+
+<f:section name="main">
+	<f:flashMessages />
+	<f:for each="{links}" as="link">
+		<div class="listItem">
+		<h3>{link.title}</h3>
+		<f:link.action action="callAmazon" additionalParams="{tx_amazonbooks_amazonbooks:{link:link}}" pageType="2435978245">
+		<f:if condition="{link.damImage}">
+			<f:then>
+				<axt:dam link="{link}" width="70" />
+			</f:then>
+		
+		<f:else>
+			<img width="70" src="{link.smallImage}" alt="amazon_book_link" title="{link.title}" />
+		</f:else>
+		</f:if>
+		</f:link.action>
+		<p>
+			<strong><f:translate key="tx_amazonbooks_domain_model_link.author" />:</strong> {link.author} <br />
+			<strong><f:translate key="tx_amazonbooks_domain_model_link.manufacturer" />:</strong> {link.manufacturer} <br />
+			<f:if condition="{link.edition}"><strong><f:translate key="tx_amazonbooks_domain_model_link.edition" />:</strong> {link.edition} <br /></f:if>
+			<strong><f:translate key="tx_amazonbooks_domain_model_link.isbn" />:</strong> {link.isbn} <br />
+			<f:if condition="{link.description}">
+				{link.description}
+			</f:if>
+			<br />
+			<f:link.action action="callAmazon" additionalParams="{tx_amazonbooks_amazonbooks:{link:link}}" pageType="2435978245">Buch bei Amazon aufrufen</f:link.action>
+			
+		</p>
+		</div>
+	</f:for>
+</f:section>

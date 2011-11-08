@@ -1,0 +1,75 @@
+plugin.tx_amazonbooks {
+	view {
+		templateRootPath = {$plugin.tx_amazonbooks.view.templateRootPath}
+		partialRootPath = {$plugin.tx_amazonbooks.view.partialRootPath}
+		layoutRootPath = {$plugin.tx_amazonbooks.view.layoutRootPath}
+		
+	}
+	persistence {
+		storagePid = {$plugin.tx_amazonbooks.persistence.storagePid}
+		/*
+		classes {
+			Tx_MutualShop_Domain_Model_Image {
+			newRecordStoragePid = 1
+			mapping {
+				tableName = tx_dam
+	  			}
+		  	}*/		
+	  	}		
+	}
+	
+	settings {
+		amazon_partner_id = wwwdasjapanis-21
+		}
+		
+	action = list
+}
+
+plugin.tx_amazonbooks._CSS_DEFAULT_STYLE (
+	.listItem {display:block;clear:both;margin:10px 0;overflow:hidden}
+	.listItem img {float:left}
+	.listItem p {margin-left: 80px}
+)
+
+
+
+ # Module configuration
+module.tx_amazonbooks {
+	persistence {
+		storagePid = {$module.tx_amazonbooks.persistence.storagePid}
+	}
+	view {
+		templateRootPath = {$module.tx_amazonbooks.view.templateRootPath}
+		partialRootPath = {$module.tx_amazonbooks.view.partialRootPath}
+		layoutRootPath = {$module.tx_amazonbooks.view.layoutRootPath}
+	}
+}
+
+
+amazonbooks_counter = PAGE
+amazonbooks_counter {
+  typeNum = 2435978245
+  10 = USER_INT
+  10 {
+    userFunc = tx_extbase_core_bootstrap->run
+    pluginName = pi1
+    extensionName = AmazonBooks
+
+    switchableControllerActions {
+        Link {
+            1 = callAmazon
+        }
+    }
+    
+    
+    settings =< plugin.tx_amazonbooks.settings
+    persistence =< plugin.tx_amazonbooks.persistence
+    view =< plugin.tx_amazonbooks.view
+  }
+  config {
+    disableAllHeaderCode = 0
+    additionalHeaders = Content-type:text/html
+    xhtml_cleaning = 0
+    admPanel = 0
+  }
+}

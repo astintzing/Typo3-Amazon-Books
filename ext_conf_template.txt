@@ -1,0 +1,14 @@
+# cat=basic/enable; type=string; label=Amazon Developer Key
+amazon_developer_key = <insert here>
+
+# cat=basic/enable; type=string; label=Amazon Developer Secret Key
+amazon_developer_secret_key = <insert here>
+
+# cat=basic/enable; type=string; label=Amazon Locale
+amazon_locale = DE
+
+# cat=basic/enable; type=string; label=Image Path
+image_path = fileadmin/user_upload/Buchcover
+
+# cat=basic/enable; type=boolean; label=Use DAM
+use_dam = 1

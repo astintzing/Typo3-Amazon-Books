@@ -1,0 +1,8 @@
+<f:layout name="Default" />
+<f:section name="main">
+    <h1>Single View for Link</h1>
+    <f:flashMessages />
+    <f:render partial="Link/Properties" arguments="{link:link}" />
+    <f:link.action action="list">Back to list</f:link.action><br />
+    <f:link.action action="new">New Link</f:link.action>
+</f:section>

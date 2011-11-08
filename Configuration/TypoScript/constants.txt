@@ -1,0 +1,30 @@
+plugin.tx_amazonbooks {
+	view {
+		# cat=plugin.tx_amazonbooks/file; type=string; label=Path to template root (FE)
+		templateRootPath = EXT:amazon_books/Resources/Private/Templates/
+		# cat=plugin.tx_amazonbooks/file; type=string; label=Path to template partials (FE)
+		partialRootPath = EXT:amazon_books/Resources/Private/Partials/
+		# cat=plugin.tx_amazonbooks/file; type=string; label=Path to template layouts (FE)
+		layoutRootPath = EXT:amazon_books/Resources/Private/Layouts/
+	}
+	persistence {
+		# cat=plugin.tx_amazonbooks//a; type=int+; label=Default storage PID
+		storagePid = 
+	}
+}
+
+
+module.tx_amazonbooks {
+	view {
+		# cat=module.tx_amazonbooks/file; type=string; label=Path to template root (BE)
+		templateRootPath = EXT:amazon_books/Resources/Private/Backend/Templates/
+		# cat=module.tx_amazonbooks/file; type=string; label=Path to template partials (BE)
+		partialRootPath = EXT:amazon_books/Resources/Private/Backend/Partials/
+		# cat=module.tx_amazonbooks/file; type=string; label=Path to template layouts (BE)
+		layoutRootPath = EXT:amazon_books/Resources/Private/Backend/Layouts/
+	}
+	persistence {
+		# cat=module.tx_amazonbooks//a; type=int+; label=Default storage PID
+		storagePid = 
+	}
+}
