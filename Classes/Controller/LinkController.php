@@ -87,8 +87,8 @@ class Tx_AmazonBooks_Controller_LinkController extends Tx_Extbase_MVC_Controller
 	 * @dontvalidate $link
 	 */
 	public function callAmazonAction(Tx_AmazonBooks_Domain_Model_Link $link) {
-
-		$loc = 'http://www.amazon.de/exec/obidos/ASIN/'.$link->getAsin().'/'.$this->settings['amazon_partner_id'];
+	    
+		$loc = 'http://www.amazon.de/exec/obidos/ASIN/'.$link->getAsin().'/'.$this->conf['amazon_associate_tag'];
 		if(!t3lib_div::cmpIp(t3lib_div::getIndpEnv('REMOTE_ADDR'),$GLOBALS['TYPO3_CONF_VARS']['SYS']['devIPmask'])) {
 			// TRACKING
 			$link->setCalls($link->getCalls()+1);

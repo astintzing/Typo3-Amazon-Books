@@ -6,7 +6,7 @@
 	<f:for each="{links}" as="link">
 		<div class="listItem">
 		<h3>{link.title}</h3>
-		<f:link.action action="callAmazon" additionalParams="{tx_amazonbooks_amazonbooks:{link:link}}" pageType="2435978245">
+		<f:link.action action="callAmazon" additionalParams="{tx_amazonbooks_pi1:{link:link}}" pageType="2435978245">
 		<f:if condition="{link.damImage}">
 			<f:then>
 				<axt:dam link="{link}" width="70" />
@@ -26,7 +26,7 @@
 				{link.description}
 			</f:if>
 			<br />
-			<f:link.action action="callAmazon" additionalParams="{tx_amazonbooks_amazonbooks:{link:link}}" pageType="2435978245">Buch bei Amazon aufrufen</f:link.action>
+			<f:link.action action="callAmazon" additionalParams="{tx_amazonbooks_pi1:{link:link}}" pageType="2435978245">Buch bei Amazon aufrufen</f:link.action>
 			
 		</p>
 		</div>

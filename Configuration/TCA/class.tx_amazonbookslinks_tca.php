@@ -38,7 +38,7 @@ class tx_amazonbookslinks_tca {
 		$this->db = &$GLOBALS['TYPO3_DB'];
 		$this->user = &$GLOBALS['BE_USER'];
 
-		$this->lang = new language(); // t3lib_div::makeInstance('language');
+		$this->lang = new language();
 		$this->lang->init($this->user->uc['lang']);
 		$this->lang->includeLLFile('EXT:amazon_books/Resources/Private/Language/locallang.xml');
 
@@ -157,8 +157,6 @@ class tx_amazonbookslinks_tca {
 		$path[] = $s['image_path'];
 		$path = join('/',$path) . '/';
 
-		//if(!t3lib_basicFileFunctions::checkPathAgainstMounts($path)) throw new Exception($this->lang->getLL('tx_amazonbooks.no_image_path_perms') . ': ' . $s['image_path']);
-
 		if(!is_dir($path)) {
 			mkdir($path,0770,true);
 		}
@@ -176,7 +174,6 @@ class tx_amazonbookslinks_tca {
 		elseif($img1) $img = $img1;
 		else {
 			$img = false;
-			//			$ret['error'] = $LANG->
 		}
 
 		if($img) {
@@ -190,11 +187,6 @@ class tx_amazonbookslinks_tca {
 			}
 
 			$img = $img . rawurldecode($urls[$i]);
-			
-//			$img = 'http://www.das-japanische-gedaechtnis.de/ALEX%BJOERN.jpg';
-			
-//			die($nu);
-			
 				
 			$fh = fopen($fn, 'wb');
 
@@ -206,7 +198,7 @@ class tx_amazonbookslinks_tca {
 			$info = curl_getinfo($ch);
 			@curl_close($ch);
 			@fclose($fh);
-//die(var_dump($code));
+
 			if($info['http_code'] == 200) {
 
 				$mimetypes = array('image/jpeg' => '.jpg','image/gif' => '.gif','image/png' => '.png', 'image/jpg' => '.jpg','image/tiff' => '.tif','image/tif' => '.tif');
@@ -255,7 +247,7 @@ class tx_amazonbookslinks_tca {
 			
 		if(isset($_POST['sword'])) {
 			$sword = trim($_POST['sword']);
-			$searchParams = array('SearchIndex' => 'Books', 'Keywords' => $sword, 'ResponseGroup' => 'Small,Medium,Large,Images,Reviews');
+			$searchParams = array('AssociateTag' => $s['amazon_associate_tag'], 'SearchIndex' => 'Books', 'Keywords' => $sword, 'ResponseGroup' => 'Small,Medium,Large,Images,Reviews');
 			if($page) $searchParams['ItemPage'] = $page;
 
 

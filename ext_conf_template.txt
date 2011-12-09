@@ -4,6 +4,9 @@ amazon_developer_key = <insert here>
 # cat=basic/enable; type=string; label=Amazon Developer Secret Key
 amazon_developer_secret_key = <insert here>
 
+# cat=basic/enable; type=string; label=Amazon Associate Tag/Partner-ID
+amazon_associate_tag = <insert here>
+
 # cat=basic/enable; type=string; label=Amazon Locale
 amazon_locale = DE
 
