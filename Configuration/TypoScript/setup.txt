@@ -3,25 +3,12 @@ plugin.tx_amazonbooks {
 		templateRootPath = {$plugin.tx_amazonbooks.view.templateRootPath}
 		partialRootPath = {$plugin.tx_amazonbooks.view.partialRootPath}
 		layoutRootPath = {$plugin.tx_amazonbooks.view.layoutRootPath}
-		
-	}
-	persistence {
-		storagePid = {$plugin.tx_amazonbooks.persistence.storagePid}
-		/*
-		classes {
-			Tx_MutualShop_Domain_Model_Image {
-			newRecordStoragePid = 1
-			mapping {
-				tableName = tx_dam
-	  			}
-		  	}*/		
-	  	}		
 	}
 	
-	settings {
-		amazon_partner_id = wwwdasjapanis-21
-		}
-		
+	persistence {
+		storagePid = {$plugin.tx_amazonbooks.persistence.storagePid}
+  	}		
+	
 	action = list
 }
 
